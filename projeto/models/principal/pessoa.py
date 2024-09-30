@@ -1,4 +1,4 @@
-from projeto.models import Endereco
+from projeto.models.principal.endereco import Endereco
 from abc import ABC,abstractmethod
 class Pessoa(ABC):
     def __init__(self,id:int, nome:str, telefone:int, email:str, endereco: Endereco) -> None:

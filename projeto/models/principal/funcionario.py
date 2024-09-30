@@ -1,6 +1,5 @@
 from projeto.models.principal.fisica import Fisica
 from abc import ABC,abstractmethod
-
 from projeto.models.principal.endereco import Endereco
 from projeto.models.enums.estado_civil import Estado_Civil
 from projeto.models.enums.sexo import Sexo
