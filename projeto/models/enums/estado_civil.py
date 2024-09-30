@@ -6,3 +6,4 @@ class EstadoCivil(Enum):
     SEPARADO = ("Separado")
     DIVORCIADO =("Divorciado")
     VIUVO = ("Viuvo")
+    
