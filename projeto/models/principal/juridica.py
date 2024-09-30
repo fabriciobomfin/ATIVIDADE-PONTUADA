@@ -1,5 +1,5 @@
-from projeto.models.pessoa import Pessoa
-from projeto.models.endereco import Endereco
+from projeto.models.principal.pessoa import Pessoa
+from projeto.models.principal.endereco import Endereco
 from projeto.models.enums.sexo import Sexo
 from projeto.models.enums.estado_civil import Estado_Civil
 from abc import ABC,abstractmethod
