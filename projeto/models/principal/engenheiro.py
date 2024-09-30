@@ -1,4 +1,4 @@
-from projeto.models.funcionario import Funcionario
+
 from projeto.models.endereco import Endereco
 from projeto.models.enums.estado_civil import Estado_Civil
 from projeto.models.enums.setor import Setor

@@ -1,3 +1,4 @@
+
 from models.advogado import Advogado
 from models.endereco import Endereco
 from models.enums.estado_civil import Estado_Civil
