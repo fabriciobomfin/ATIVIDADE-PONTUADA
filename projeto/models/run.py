@@ -1,5 +1,5 @@
-from projeto.models.advogado import Advogado
-from projeto.models.endereco import Endereco
+from projeto.models.principal.advogado import Advogado
+from projeto.models.principal.endereco import Endereco
 from projeto.models.enums.estado_civil import Estado_Civil
 from projeto.models.enums.setor import Setor
 from projeto.models.enums.sexo import Sexo

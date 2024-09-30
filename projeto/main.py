@@ -1,8 +1,8 @@
-from models.advogado import Advogado
-from models.endereco import Endereco
-from models.enums.estado_civil import Estado_Civil
-from models.enums.setor import Setor
-from models.enums.sexo import Sexo
+from projeto.models.principal.advogado import Advogado
+from projeto.models.principal.endereco import Endereco
+from projeto.models.enums.estado_civil import Estado_Civil
+from projeto.models.enums.setor import Setor
+from projeto.models.enums.sexo import Sexo
 
 def main():
     # Criando um endereço para o advogado

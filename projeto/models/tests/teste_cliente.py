@@ -1,6 +1,6 @@
 import pytest
-from projeto.models.cliente import Cliente
-from projeto.models.endereco import Endereco
+from projeto.models.principal.cliente import Cliente
+from projeto.models.principal.endereco import Endereco
 from projeto.models.enums.estado_civil import Estado_Civil
 from projeto.models.enums.sexo import Sexo
 

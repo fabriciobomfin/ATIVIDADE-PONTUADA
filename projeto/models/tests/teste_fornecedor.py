@@ -1,6 +1,6 @@
 import pytest
-from projeto.models.fornecedor import Fornecedor
-from projeto.models.endereco import Endereco
+from projeto.models.principal.fornecedor import Fornecedor
+from projeto.models.principal.endereco import Endereco
 
 @pytest.fixture
 def criar_fornecedor():

@@ -1,6 +1,6 @@
 import pytest
-from projeto.models.prestacao_servico import PrestacaoServico
-from projeto.models.endereco import Endereco
+from projeto.models.principal.prestacao_servico import PrestacaoServico
+from projeto.models.principal.endereco import Endereco
 
 @pytest.fixture
 def criar_prestacao_servico():

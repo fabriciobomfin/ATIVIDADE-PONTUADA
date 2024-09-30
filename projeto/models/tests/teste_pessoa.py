@@ -1,7 +1,7 @@
 import pytest
-from projeto.models.endereco import Endereco
+from projeto.models.principal.endereco import Endereco
 from projeto.models.enums.sexo import Sexo
-from projeto.models.pessoa import Pessoa
+from projeto.models.principal.pessoa import Pessoa
 
 @pytest.fixture
 def criar_pessoa():
