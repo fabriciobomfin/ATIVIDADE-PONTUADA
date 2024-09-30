@@ -13,3 +13,4 @@ class Medico(Funcionario):
     def __str__(self) -> str:
         return (f"{super().__str__()}"
                 f"CRM: {self.crm}")
+    
