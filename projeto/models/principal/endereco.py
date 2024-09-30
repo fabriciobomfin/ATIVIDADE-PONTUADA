@@ -7,6 +7,7 @@ class Endereco:
         self.cep = cep
         self.cidade = cidade
         self.unidadefederativa = unidadefederativa
+
     def __str__(self) -> str:
         return (
             f"\n=== Endereço ==="
@@ -16,4 +17,5 @@ class Endereco:
             f"\nCEP: {self.cep}"
             f"\nCidade: {self.cidade}"
             f"\nUF: {self.unidadefederativa.estado} / {self.unidadefederativa.sigla}"
-        )
+             )
+    

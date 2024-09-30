@@ -15,3 +15,4 @@ class Fisica(Pessoa, ABC):
                 f"Sexo: {self.sexo.texto}"
                 f"Estado Civil: {self.estadoCivil.value}"
                 f"Data de nascimento: {self.dataNascimento}")
+    

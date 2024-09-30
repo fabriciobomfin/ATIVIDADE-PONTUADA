@@ -8,8 +8,6 @@ class Pessoa(ABC):
         self.email = email
         self.endereco = endereco
     
-
-
     def _verificar_id(self, id):
         if not isinstance (id,int):
             raise TypeError("ID só pode ser numeros.")
@@ -29,3 +27,4 @@ class Pessoa(ABC):
                 f"\nTelefone: {self.telefone}"
                 f"\nEmail: {self.email}"
                 f"\nEndereco: {self.endereco}")
+    
