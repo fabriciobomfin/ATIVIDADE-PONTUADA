@@ -1,18 +1,16 @@
 from enum import Enum
 
-class Unidade_Federativa(Enum):
+class UnidadeFederativa(Enum):
     BAHIA = ("Bahia", "BA")
-    SÃO_PAULO = ("São Paulo", "SP")
-    RIO_DE_JANEIRO = ("Rio de Janeiro", "RJ")
-   
-    def __init__(self, nome, sigla):
-        self._nome = nome
-        self._sigla = sigla
+    SAO_PAULO = ("São Paulo", "RJ")
+    RIO_DE_JANEIRO = ("Rio de Janeiro", "SP")
 
-    @property
-    def nome(self):
-        return self._nome
+    def __init__(self, nome: str, sigla: str) -> None:
+        self.nome = nome
+        self.sigla = sigla
 
-    @property
-    def sigla(self):
-        return self._sigla
+    def get_nome(self) -> str:
+        return self.nome
+
+    def get_sigla(self) -> str:
+        return self.nome

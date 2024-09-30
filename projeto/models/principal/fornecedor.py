@@ -1,13 +1,15 @@
+from projeto.models.principal.juridica import PessoaJuridica
 from projeto.models.principal.endereco import Endereco
-from projeto.models.principal.juridica import Juridica
 
-class Fornecedor(Juridica):
-    def __init__(self,id: int, nome: str, telefone: str, email: str, endereco: Endereco, cnpj: str, inscricaoEstadual: str,produto: str) -> None:
+
+class Fornecedor(PessoaJuridica):
+    def __init__(self, nomeProduto: str, id: int, nome: str, telefone: str, email: str, endereco: Endereco, cnpj: str, inscricaoEstadual: str) -> None:
         super().__init__(id, nome, telefone, email, endereco, cnpj, inscricaoEstadual)
-        self.produto = produto
+        self.produto = nomeProduto
+
 
     def __str__(self) -> str:
         return (
             f"{super().__str__()}"
-            f"\nProduto: {self.produto}"
-                )
+            f"\nNome do produto: {self.produto}"
+            )

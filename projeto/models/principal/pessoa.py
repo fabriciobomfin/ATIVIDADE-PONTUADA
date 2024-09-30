@@ -1,30 +1,25 @@
+from abc import ABC, abstractmethod
+
+from projeto.models.principal.pessoa import Pessoa
 from projeto.models.principal.endereco import Endereco
-from abc import ABC,abstractmethod
-class Pessoa(ABC):
-    def __init__(self,id:int, nome:str, telefone:int, email:str, endereco: Endereco) -> None:
-        self.id = self._verificar_id(id)
-        self.nome = nome
-        self.telefone = self._verificarTelefone(telefone)
-        self.email = email
-        self.endereco = endereco
-    
-    def _verificar_id(self, id):
-        if not isinstance (id,int):
-            raise TypeError("ID só pode ser numeros.")
-        return id  
-    
-    def _verificarTelefone(self,telefone):
-        if not isinstance (telefone,int):
-            raise TypeError("Digite apenas números.")
-        if telefone < 0:
-            raise ValueError("Não pode ser negativo")
-        return telefone
-    
+
+class PessoaJuridica(Pessoa, ABC):
     @abstractmethod
+    def __init__(self, id: int, nome: str, telefone: str, email: str, endereco: Endereco, cnpj: str, inscricaoEstadual: str,) -> None:
+        super().__init__(id, nome, telefone, email, endereco)
+        self.cnpj = cnpj
+        self.inscricaoEstadual = inscricaoEstadual
+
+    def _verificar_tamanho_cnpj(self, CNPJ):
+            if len(CNPJ) > 14:
+                raise TypeError("CNPJ inválido.")
+            return CNPJ
+
+
     def __str__(self) -> str:
-        return (f"\nID: {self.id}"
-                f"\nNome: {self.nome}"
-                f"\nTelefone: {self.telefone}"
-                f"\nEmail: {self.email}"
-                f"\nEndereco: {self.endereco}")
-    
+        return (
+            f"{super().__str__()}"
+            f"\nCNPJ: {self.cnpj}"
+            f"\nInscrição Estadual: {self.inscricaoEstadual}"
+        )
+#from projeto.models.principal.endereco import Endereco

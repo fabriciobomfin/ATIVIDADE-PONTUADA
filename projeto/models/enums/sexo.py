@@ -1,18 +1,15 @@
 from enum import Enum
 
 class Sexo(Enum):
-    MASCULINO = ("Masculino","M")
-    FEMININO = ("Feminino","F")
-    NEUTRO = ("Neutro","N")
+    MASCULINO = ("Masculino", "M")
+    FEMININO = ("Feminino", "F")
 
-def __init__(self, texto: str, caracter: str) -> None:
-        self._texto = texto
-        self._caracter = caracter
+    def __init__(self, nome: str, charNome: str) -> None:
+        self.nome = nome
+        self.charNome = charNome
 
-@property
-def texto(self) -> str:
-        return self._texto
+    def get_nome(self) -> str:
+        return self.nome
 
-@property
-def caracter(self) -> str:
-        return self._caracter
+    def get_charNome(self) -> str:
+        return self.charNome

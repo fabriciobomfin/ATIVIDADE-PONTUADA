@@ -1,7 +1,7 @@
 from projeto.models.principal.pessoa import Pessoa
 from projeto.models.principal.endereco import Endereco
 from projeto.models.enums.sexo import Sexo
-from projeto.models.enums.estado_civil import Estado_Civil
+from projeto.models.enums.estado_civil import EstadoCivil
 from abc import ABC,abstractmethod
 
 class Juridica(Pessoa,ABC):
