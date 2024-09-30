@@ -4,7 +4,6 @@ from projeto.models.enums.estado_civil import Estado_Civil
 from projeto.models.enums.setor import Setor
 from projeto.models.enums.sexo import Sexo
 
-
 class Medico(Funcionario):
     def __init__(self, id: int, nome: str, telefone: str, email: str, endereco: Endereco, sexo: Sexo, estadoCivil: Estado_Civil, dataNascimento: str, cpf: str, 
                  rg: str, matricula: str, setor: Setor, salario: float, crm : str) -> None:

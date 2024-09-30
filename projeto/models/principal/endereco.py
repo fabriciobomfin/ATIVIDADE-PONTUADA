@@ -1,4 +1,5 @@
 from projeto.models.enums.unidade_federativa import Unidade_Federativa
+
 class Endereco: 
     def __init__(self, logradouro : str, numero : int, complemento: str, cep: str, cidade: str, unidadefederativa: Unidade_Federativa) -> None:
         self.logradouro = logradouro

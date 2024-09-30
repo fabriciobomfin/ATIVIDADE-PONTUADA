@@ -6,7 +6,6 @@ from projeto.models.enums.estado_civil import Estado_Civil
 from projeto.models.enums.sexo import Sexo
 from projeto.models.enums.setor import Setor
 
-
 class Funcionario(Fisica, ABC):
     def __init__(self, id: int, nome: str, telefone: str, email: str, endereco: Endereco, sexo: Sexo, estadoCivil: Estado_Civil, dataNascimento: str, cpf:str, rg:str,matricula:str, setor : Setor, salario : float) -> None:
         super().__init__(id, nome, telefone, email, endereco, sexo, estadoCivil, dataNascimento)

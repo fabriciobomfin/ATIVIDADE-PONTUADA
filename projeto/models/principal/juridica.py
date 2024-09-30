@@ -10,7 +10,6 @@ class Juridica(Pessoa,ABC):
         self.cnpj = cnpj
         self.inscricaoEstadual = inscricaoEstadual
     
-    
     @abstractmethod
     def __str__(self) -> str:
         return (f"{super().__str__()}"
